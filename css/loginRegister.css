@@ -1,0 +1,213 @@
+
+
+/* start login */
+#login{
+    width: 80%;
+    height: 70vh;
+    margin:60px auto;
+    padding: 10px;
+    background-color: var(--bg);
+border-radius: 100px 20px ;
+box-shadow:0px 47px 100px 0px rgba(17, 12, 0, .5);
+}
+#login  .left h3{
+font-size: 40px;
+text-align: center;
+font-weight: bold;
+color: var(--border);
+margin: 190px  5px 0px;
+}
+#login .right{
+    background-color: var(--border);
+    color: var(--bg);
+    padding: 30px 40px;
+    border-radius:20px  100px  ;
+}
+#login .right h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+#login .right #input input{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 3px;
+    outline: none;
+}
+#login .right #input input::placeholder{
+    color: var(--bg); 
+}
+#login .right .checkbox{
+    width: 20px;
+}
+#login .right .btn{
+    background-color: var(--bg);
+    color: white;
+    margin: 25px 90px;
+    padding: 9px 100px;
+    outline: none;
+    font-size: 20px;
+}
+#login .right .btn:hover{
+    background-color: var(--border);
+    color: var(--bg); 
+    border: 1px solid var(--bg);
+}
+#login .right .p{
+    font-size: 17px;
+ justify-content: space-around;
+}
+/* end login */
+/* start register */
+#register{
+    width: 80%;
+    height: 70vh;
+    margin:60px auto;
+    padding: 10px;
+    background-color: var(--bg);
+border-radius: 100px 20px ;
+box-shadow:0px 47px 100px 0px rgba(17, 12, 0, .5);
+}
+#register  .left h3{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--border);
+    margin: 190px  5px 0px;
+    }
+    #register .right{
+        background-color: var(--border);
+        color: var(--bg);
+        padding: 20px 40px;
+        border-radius:20px  100px  ;
+    }
+    #register .right h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #register .right #input-register input{
+        width: 80%;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px 3px;
+        outline: none;
+    }
+    #register .right #input-register input::placeholder{
+        color: var(--border); 
+    }
+    #register .right .checkbox{
+        width: 20px;
+    }
+    .right p a , .showPassword {
+        color: var(--bg);
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    #register .right .btn{
+        background-color: var(--bg);
+        color: white;
+        margin: 15px 90px;
+        padding: 9px 90px;
+        outline: none;
+        font-size: 20px;
+    }
+    #register .right .btn:hover{
+        background-color: var(--border);
+        color: var(--bg); 
+        border: 1px solid var(--bg);
+    }
+
+
+/* end register */
+
+
+
+
+
+
+@media  (max-width : 990px) {
+    #login{
+     width: 80%;
+    height: 100vh;
+    margin:9px;
+    padding: 3px;
+}
+#login  .left h3{
+font-size: 30px;
+margin: 150px  5px 0px;
+}
+#login .right{
+    padding: 20px ;
+    border-radius:20px  100px  ;
+}
+#login .right h2{
+    font-size: 30px;
+}
+#login .right .btn{
+    background-color: var(--bg);
+    color: white;
+    margin: 15px 25px;
+    padding: 9px 70px;
+    outline: none;
+    font-size: 20px;
+}
+#login .right .p{
+  flex-direction: column;
+}
+/* startregister */
+#register{
+width: 80%;
+height: 100vh;
+margin:9px;
+padding: 3px;
+}
+#register  .left h3{
+font-size: 30px;
+margin: 150px  5px 0px;
+}
+
+#register .right{
+padding: 20px ;
+border-radius:20px  100px  ;
+}
+#register .right h2{
+font-size: 30px;
+}
+#register .right .btn{
+background-color: var(--bg);
+color: white;
+margin: 15px 25px;
+padding: 9px 70px;
+outline: none;
+font-size: 20px;
+}
+#register .right .p{
+flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

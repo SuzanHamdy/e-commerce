@@ -1,0 +1,593 @@
+                        /* all app */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    transition: all .4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --bg: rgb(67, 0, 87) ;
+    --border: rgb(255,193,7)  ;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+.line{
+    width: 80%;
+    height: 5px;
+    margin: auto;
+   background-color: var(--border);
+}
+.space{
+    width: 100%;
+    height: 100px;
+}
+                                    /* start header */
+header{
+    width: 100%;
+    height: 70px;
+background-color:var(--bg) ;
+transition: all .4s;
+color: white;
+}
+header .img{
+    font-size: 33px;
+    font-weight: bold;
+   margin-top: 0;
+    margin-right: 200px;
+}
+header .img .s{
+    font-size: 43px;
+}
+header nav ul li{
+    transition: all .2s;
+    margin-right: 3px;
+    padding: 3px ;
+}
+header nav ul li :hover{
+    color: var(--border)!important;
+   font-weight: bold;
+border: 1px solid var(--border);
+border-radius: 10px;   
+}
+header nav ul li a:hover{
+    color: var(--border)!important;   
+}
+header nav .btn{
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 7px 18px;
+}
+header nav .btn a{
+    color: white;
+    padding: 0px; 
+}
+header nav .btn a:hover{
+    color: black;  
+}
+header nav .logout{
+    display: none;
+}
+header nav .icon{
+    position: relative;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 20px; 
+    display: none;
+}
+header nav .icon a{
+    color: var(--bg)!important;  
+}
+header nav .icon  #num{
+    position: absolute;
+    top: -10px;
+    right: -4px;
+    background-color: red;
+    padding:0px 5px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    border:1px solid red ;
+    display: none;
+
+}
+                                    /* end header */
+
+#welcome{
+    width: 45%;
+    border:1px solid var(--border) ;
+    height: 80px;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 30px;
+    display: none;
+    color: white;
+    margin: auto;
+    text-align: center;
+    background-color: var(--bg);
+}
+    .cart{
+        width: 400px;
+        background-color: rgb(53, 49, 49);
+        color: white;
+        position: fixed;
+    top: 75px;
+    right:-400px;
+    bottom: 0;
+     display: grid;
+     grid-template-rows: 70px 1fr 70px;
+z-index: 100000000000000000;
+    }
+    .show-cart  .cart{
+        right: 0;
+
+    }
+    .cart h2{
+        font-weight: bold;
+        padding: 20px;
+        font-size: 30px;
+    }
+   .cart .button{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+   }
+   .cart .button button{
+    background-color: var(--border);
+    border: none;
+    outline: none;
+    font-weight: bold;
+   }
+
+.cart .listCart .item {
+display: grid;
+grid-template-columns: 70px 150px 50px 1fr;
+gap: 10px;
+text-align: center;
+align-items: center;
+cursor: pointer;
+}
+.cart .listCart .item img{
+    width: 100%;
+    height: 50px;
+    margin: 15px;
+    border-radius: 20%;
+}
+
+
+.cart .listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.cart .listCart {
+    overflow: auto;
+}
+.cart .listCart::-webkit-scrollbar{
+    width: 0;
+}
+            /* start section1 */
+    .card .card-body  h1{
+        color: var(--bg);
+        font-weight: bold;
+    }
+.card .card-body  h1 span{
+    color: var(--border);
+    font-weight: bold;
+}
+.card .card-body p{
+font-size: 20px;
+}
+.card .card-body .btn{
+    background-color: var(--bg);
+    color: white;
+    margin: 40px;
+    padding: 10px 50px;
+}
+.card .card-body .btn:hover{
+    background-color: var(--border);
+    color: black;
+}       
+    /* end section1 */
+    /* start section2 */
+    #section2 h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--border);
+        text-shadow: 1px 1px 8px var(--bg);
+    }
+    #section2 h2::first-letter{
+        font-size: 100px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--bg); 
+    }
+    #section2 .product {
+        gap: 5px;
+        margin: 15px ;
+        transition: all .4s;
+        color: var(--bg);
+    }
+    #section2 .product .card{
+        box-shadow: 0px  0px 50px #757676;
+    }
+    #section2 .product .card:hover {
+       border: 1px solid  var(--border);
+    }
+    #section2 .product .card h5{
+        font-size: 22px;
+        font-weight: bold;
+    }
+#section2 .product .card .star {
+color: var(--border);
+font-size: 22px;
+text-align: center;
+cursor: pointer;
+}
+#section2 .product .card .price{
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--bg);
+}
+#section2 .product .card .price .add{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+#section2 .product .card .price .add:hover{
+transform: scale(.9);
+}
+#section2 .product .card img{
+    width: 200px;
+    height: 250px;
+    margin: 25px;
+    transition: all .4s;
+}
+#section2 .product .card:hover  img{
+    transform: scale(1.2);
+}
+/* end section2 */
+/* start section3 */
+.section3{
+    width: 80%;
+    height: 35vh;
+    padding: 30px ;
+}
+.section3   .free{
+    font-size: 25px;
+    text-align: center;
+    color: var(--bg);
+    font-weight: bold;
+}
+.section3   .free p{
+    font-size: 15px;
+}
+/* end section3 */
+/* start section4 */
+.section4{
+    width: 80%;
+    height: 35vh;
+    padding: 23px;
+}
+.subscribe{   
+width: 80%;
+height: 27vh;
+margin:  auto; 
+   padding: 23px;
+text-align: center;
+color: var(--bg);
+}
+.subscribe h2{
+    font-weight: bold;
+    margin: 30px 3px;
+}
+.subscribe form{
+    width: 74%;
+    height: 10vh;
+    margin: 15px auto  ;
+     border-radius: 10px; 
+    color: var(--bg);  
+    border: .1px solid grey ;
+}
+.subscribe form input{
+    width: 70%;
+    height: 6vh;
+       padding: 8px;
+    color: var(--bg);  
+    border: none;
+    outline: none;
+}
+.subscribe form input::placeholder{
+    font-size: 25px;
+    color: var(--bg);  
+}
+.subscribe form .btn{
+    font-size: 25px;
+    color: var(--bg);  
+}
+/* end section4 */
+/* start footer */
+footer{
+    width: 99%;
+    height: 70vh;
+    background-color: var(--bg);
+    color: white;
+    margin: auto;
+    padding: 20px ;
+}
+footer .footer{
+    margin: 30px  10px 10px;
+    height: 60vh;
+}
+footer .footer .start .footer1 h3{
+font-size: 35px;
+font-weight: bold;
+color: var(--border);
+cursor: pointer;
+}
+footer .footer .start .footer1 p{
+    line-height: 30px;
+    font-size: 21px;
+    cursor: pointer;
+}
+footer .footer .start .footer1 p i{
+  background-color: rgb(10, 10, 10);
+  border-radius: 50%;
+  font-size: 23px;
+  padding: 10px;
+  margin: 4px 8px;
+  transition: all .7s;
+}
+footer .footer .start .footer1 p i:hover{
+    background-color: var(--border);
+}
+footer .footer .end p{
+    text-align: center;
+    word-wrap: break-word;
+    word-spacing: 6px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+footer .footer .end p span{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--border);
+}
+/* end footer */
+.arrow i{
+    color: var(--bg);
+    background-color: var(--border);
+    border-radius: 50%;
+    padding: 9px;
+     position: fixed;
+   bottom: 50px;
+    right: 10px; 
+    font-size: 25px;
+    display: none;
+}
+@media  (max-width : 1300px) {
+    .section4{
+        width: 80%;
+        height: 35vh;
+        padding: 23px;
+    }
+    .subscribe{   
+    width: 80%;
+    height: 27vh;
+    margin:  auto; 
+       padding: 23px;
+    text-align: center;
+    color: var(--bg);
+    }
+    .subscribe h2{
+        font-weight: bold;
+        margin: 20px 3px;
+    }
+    .subscribe form{
+        width: 77%;
+        height: 10vh;
+        margin: 15px auto  ;
+         border-radius: 10px; 
+        color: var(--bg);  
+        border: .1px solid grey ;
+    }
+    .subscribe form input{
+        width: 58%;
+        height: 8vh;
+           padding: 8px;
+    }
+    .subscribe form input::placeholder{
+        font-size: 20px; 
+    }
+    .subscribe form .btn{
+        font-size: 20px;
+    }
+
+    footer .footer .start .footer1 p i{
+        font-size: 18px;
+        padding: 7px;
+        margin: 4px ;
+      }
+}
+@media  (max-width : 990px) {
+    header .img{
+        font-size: 33px;
+        font-weight: bold;
+       margin-top: 0;
+        margin-right: 70px;
+    } 
+    header nav ul li:hover{
+        color: white!important;
+       font-weight: bold;
+    border: none;
+    border-radius: 10px;   
+    }
+    #navbarTogglerDemo03{
+        width: 60%;
+        background-color: var(--bg);
+        padding-left: 20px;
+        position: absolute;
+        top: 80px;
+        right: 10px;
+    }
+    header nav .icon{
+        position: absolute;
+        top: 75px;
+        right: 4px;
+    }
+    header nav .icon a{
+        color: var(--bg)!important;  
+    }
+    header nav .icon  #num{
+        position: absolute;
+        top: 13px;
+        right: -8px;
+    }
+    #section2 .product .card{
+ width: 100%;
+    }
+    #section2 .product .card img{
+        width: 70%;
+        height: 230px;
+        margin: 10px;
+        transition: all .4s;
+    }
+    .section4{
+        width: 100%;
+        height: 35vh;
+        padding: 13px;
+    }
+    .subscribe{   
+    width: 100%;
+    height: 27vh;
+       padding: 13px;
+    }
+    .subscribe h2{
+        margin: 10px 3px;
+    }
+    .subscribe form{
+        width: 80%;
+        height: 10vh;
+    }
+    .subscribe form input{
+        width: 58%;
+        height: 8vh;
+           padding: 8px;
+    }
+    .subscribe form input::placeholder{
+        font-size: 20px; 
+    }
+    .subscribe form .btn{
+        font-size: 20px;
+    }
+        footer{
+            height: 190vh;
+        }
+        footer .footer{
+            margin: 30px  10px 10px;
+            height: 150vh;
+        }
+        .cart{
+        top:125px;
+        }
+}
+@media  (max-width : 450px) {
+    #section2 h2{
+        font-size: 40px;
+       
+    }
+/* start section3 */
+.section3{
+    width: 100%;
+    height: 55vh;
+    padding: 0px ;
+}
+.section3   .free{
+    font-size: 15px;
+}
+.section3   .free h3{
+    font-size: 15px;
+}
+.section3   .free p{
+    font-size: 13px;
+}
+/* end section3 */
+/* start section4 */
+.section4{
+    width: 100%;
+    height: 55vh;
+    padding: 23px;
+}
+.subscribe{   
+width: 100%;
+height: 67vh;
+   padding: 3px;
+}
+.subscribe h2{
+    
+    margin: 20px 3px;
+}
+.subscribe form{
+    width: 74%;
+    height: 20vh;
+    margin: 5px auto  ;
+    border: none;
+}
+.subscribe form input{
+    width: 100%;
+    height: 6vh;
+       padding: 8px;
+    color: var(--bg);  
+    border:1px solid #090808;
+    border-radius: 10px;
+}
+.subscribe form input::placeholder{
+    font-size: 13px;
+}
+.subscribe form .btn{
+    font-size: 13px;
+    width: 100%;
+}
+/* end section4 */
+
+
+
+
+    footer{
+        height: 200vh;
+    }
+    footer .footer .start .footer1 h3{
+        font-size: 25px;
+        }
+        footer .footer .start .footer1 p{
+            font-size: 17px;
+        }
+        footer .footer .start .footer1 p i{
+          font-size: 12px;
+          padding: 7px;
+          margin: 4px ;
+        }
+
+
+
+
+
+
+
+}

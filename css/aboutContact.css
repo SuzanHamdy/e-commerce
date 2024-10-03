@@ -1,0 +1,128 @@
+
+.about{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+}
+.about h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--border);
+    text-shadow: 1px 1px 8px var(--bg);
+}
+.about h2::first-letter{
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--bg); 
+}
+.about p{
+    border: 1px solid  var(--border);
+    padding: 30px;
+}
+.about .line{
+    margin-left: 0;
+    width: 40%;
+}
+ .about-card{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    padding: 30px;
+    border: none;
+}
+/* contact */
+.contact .col .card{
+padding: 30px;
+text-align: center;
+color: var(--bg);
+border-radius: 20px;
+}
+.contact .col .card:hover{
+    background-color: var(--bg);
+    color: white;
+}
+.contact .col .card i{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 13px 5px;
+}
+.contact2 input{
+    width: 85%;
+    height: 8vh;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.textarea  textarea{
+    width: 85%;
+    height: 28vh;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin: auto;
+    padding: 10px;
+}
+.textarea .btn{
+    margin: 10px 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  (max-width : 990px) {
+    .about{
+        height: 100vh;
+    }
+    .about h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;    
+    }
+    .about h2::first-letter{
+        font-size: 80px;
+    }
+  
+    .about .line{
+        width: 60%;
+    }
+     .about-card{
+        height: 90vh;
+        margin: auto;
+        padding: 10px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
